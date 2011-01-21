@@ -1,0 +1,11 @@
+<h2>Create new category</h2>
+<%= error_messages_for :category %>
+<% form_for(:category, :url => categories_path) do |f| -%>
+  <p>Name:<br /><%= f.text_field :name, :size => 60 %></p>
+  <p>Parent Category:<br />
+<%= 
+   @categories = Category.find(:all, :conditions => ["parent_id is NULL"], :order => "id")
+   f.collection_select(:parent_id, @categories, :id, :name, :include_blank => "Select main category...") 
+%></p>
+<%= submit_tag 'Save' %> or <%= link_to 'cancel', admin_categories_url %>
+<% end %>

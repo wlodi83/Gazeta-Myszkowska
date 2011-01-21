@@ -1,0 +1,13 @@
+<% if a = list_articles_partial.attachments[0] %>
+<div id="box_partial_articles">
+<div id="left_partial_articles">
+<%= link_to image_tag(a.public_filename(:list_articles), :border => '0'), article_url(list_articles_partial.id) %>
+</div>
+<div id="link_partial_articles">
+<%= link_to list_articles_partial.title, article_url(list_articles_partial.id) %>
+</div>
+<div id="tekst_partial_articles">
+<%= link_to list_articles_partial.synopsis, article_url(list_articles_partial.id) %><br />
+</div>
+</div>
+<% end %>

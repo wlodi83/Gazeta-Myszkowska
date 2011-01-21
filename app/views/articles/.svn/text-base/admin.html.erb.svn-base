@@ -1,0 +1,30 @@
+<h2>Edit Articles</h2>
+
+<p><%= link_to 'Create New Article', new_article_path %></p>
+
+<% if @articles_pages.page_count > 1 %>
+  <p class="pagination">Pages: <strong>
+     <%= pagination_links @articles_pages, :params => params %>
+ </strong></p>
+<% end %>
+<ul>
+<% @articles.each do |article| %>
+  <% if article.published == true %>
+  <li>
+    <%= link_to article.title, article_url(article) %>
+    [Published]
+    [<%= link_to 'Edit', edit_article_path(article) %>]
+    [<%= link_to 'Delete', article_path(article), :method => :delete, 
+                :confirm => 'Are you sure wish to delete this article?' %>]
+  </li>
+  <% else %>
+    <li>
+    <%= link_to article.title, article_url(article) %>
+    [Not Published]
+    [<%= link_to 'Edit', edit_article_path(article) %>]
+    [<%= link_to 'Delete', article_path(article), :method => :delete, 
+                :confirm => 'Are you sure wish to delete this article?' %>]
+  </li>
+  <% end %>
+<% end %>
+</ul>

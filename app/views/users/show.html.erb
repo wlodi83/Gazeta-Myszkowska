@@ -1,0 +1,8 @@
+<% title("Profil użytkownika serwisu") %>
+<div class="profil">
+  <div id="user_profile">Profil użytkownika: <strong><%= @user.username %></strong></div>
+<br />
+<div id="registration"><u>Data rejestracji:</u> <%= @user.created_at.to_s(:long) %></div>
+<div id="comments"><u>Liczba komentarzy:</u> <%= @user.comments_count %></div><br />
+<div id="about"><%= @user.profile %></div>
+</div>

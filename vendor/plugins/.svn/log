@@ -1,0 +1,3 @@
+<modify-entry
+   name="acts_as_attachment"
+   schedule="delete"/>

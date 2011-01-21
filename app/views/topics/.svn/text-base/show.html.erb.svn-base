@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @topic.name %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%=h @topic.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%=h @topic.updated_at %>
+</p>
+
+<p>
+  <b>Posts count:</b>
+  <%=h @topic.posts_count %>
+</p>
+
+
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %>

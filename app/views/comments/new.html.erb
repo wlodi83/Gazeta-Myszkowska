@@ -1,0 +1,27 @@
+<h1>New comment</h1>
+
+<% form_for(@comment) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :quest_name %><br />
+    <%= f.text_field :quest_name %>
+  </p>
+  <p>
+    <%= f.label :quest_email %><br />
+    <%= f.text_field :quest_email %>
+  </p>
+  <p>
+    <%= f.label :quest_url %><br />
+    <%= f.text_field :quest_url %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', comments_path %>

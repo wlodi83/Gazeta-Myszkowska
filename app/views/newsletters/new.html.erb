@@ -1,0 +1,18 @@
+<h2>Newsletter</h2>
+<%= error_messages_for :newsletter %>
+<% form_for(:newsletter, :url => newsletters_path) do |f| %>
+
+  <p><b>Temat</b><br />
+    <%= f.text_field :subject, :size => 50 %>
+  </p>
+  <p><b>Treść</b><br />
+    <%= f.text_area :body, :cols => 50, :rows => 20, :class => "mceEditor" %>
+    <br />
+    You can  access the user model with @user. <br>
+      e.g. &lt;%= @user.username %&gt; or &lt;%= @user.email %&gt;
+  </p>
+<br />
+  <p>
+    <%= f.submit "Zapisz" %> or <%= link_to 'Anuluj', newsletters_path %>
+  </p>
+<% end %>

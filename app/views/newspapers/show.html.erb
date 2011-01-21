@@ -1,0 +1,19 @@
+<% title("Redakcja") %>
+<h2>Redakcja</h2><br />
+Znajdź nas na mapie
+<% if @newspaper.has_map? %>
+<%= @map.div(:width => 472, :height => 400) %>
+<% end %>
+<br />
+<h3>Wydawnicto: "MyszPress" s.c.</h3>
+<p>Adres:</p>
+<p>42-300 Myszków</p>
+<p>ul. Sikorskiego 53F</p>
+<p>email: <%= mail_to("gazetamyszkowska@pro.onet.pl", "gazetamyszkowska@pro.onet.pl", :encode => "javascript") %></p>
+<p>tel. (034) 3137120</p>
+<p>fax. 313 71 21</p>
+<br />
+<% if logged_in_user and logged_in_user.has_role?('Administrator') %>
+  <%= link_to 'Edit', edit_newspaper_path(@newspaper) %> |
+  <%= link_to 'Back', newspapers_path %> 
+<% end %>

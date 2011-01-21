@@ -1,0 +1,20 @@
+<h1>Listing advert_modules</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% for advert_module in @advert_modules %>
+  <tr>
+    <td><%=h advert_module.name %></td>
+    <td><%= link_to 'Show', advert_module %></td>
+    <td><%= link_to 'Edit', edit_advert_module_path(advert_module) %></td>
+    <td><%= link_to 'Destroy', advert_module, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New advert_module', new_advert_module_path %>

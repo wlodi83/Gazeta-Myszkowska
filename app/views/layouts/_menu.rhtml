@@ -1,0 +1,30 @@
+<ul><li><%= link_to "Wiadomości", '/' %></li>
+  <li><%= link_to "O Gazecie", about_url %></li>
+  <li><%= link_to "Reklama", advertisements_path %></li>
+  <li><%= link_to "Moduły", advert_modules_path %></li>
+  <li><%= link_to "Redakcja", localization_url %></li>
+  <li><%= link_to "Kontakt", :controller => 'contacts', :action => 'show' %></li>
+<% if is_logged_in? %>
+  <li><%= link_to "Profil", edit_user_path(logged_in_user) %></li>
+  <li><%= link_to "Wyloguj", {:controller => 'account', :action => 'logout'}, :method => :post %></li>
+<% else %>
+  <li><%= link_to "Rejestracja", :controller => 'users', :action => 'new' %></li>
+  <li><%= link_to "Login", :controller => 'account', :action => 'login' %></li>
+<% end %>
+<% if logged_in_user and logged_in_user.has_role?('Administrator') %>
+  <li><b>Admin Panel</b></li> 
+  <li><%= link_to "Użytkownicy", users_path %></li>
+  <li><%= link_to "Mapy", newspapers_path %></li>
+  <li><%= link_to "Reklama", admin_advertisements_path %></li>
+  <li><%= link_to "Moduły", admin_advert_modules_path %></li>
+  <li><%= link_to "Makiety", models_path %></li>
+  <li><%= link_to "Strony", pages_path %></li>
+  <li><%= link_to "Komentarze", comments_path %></li>
+  <li><%= link_to "Newsletter", newsletters_path %></li>
+<% end -%>
+<% if logged_in_user and logged_in_user.has_role?('Editor') %>
+  <li><b>Editor Panel</b></li>
+  <li><%= link_to "Artykuły", admin_articles_path %></li>
+  <li><%= link_to "Kategorie", admin_categories_path %></li>
+<% end -%>
+</ul>

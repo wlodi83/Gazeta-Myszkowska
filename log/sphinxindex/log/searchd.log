@@ -1,0 +1,359 @@
+[Sun Feb 22 15:36:01.366 2009] [14788] accepting connections
+[Thu Feb 26 18:39:21.444 2009] [14788] caught SIGTERM, shutting down
+[Thu Feb 26 18:39:21.444 2009] [14788] shutdown complete
+[Thu Feb 26 18:40:29.640 2009] [21386] accepting connections
+[Wed Mar  4 23:52:24.082 2009] [23170] accepting connections
+[Wed Mar  4 23:52:44.513 2009] [23170] caught SIGTERM, shutting down
+[Wed Mar  4 23:52:44.513 2009] [23170] shutdown complete
+[Wed Mar  4 23:53:14.071 2009] [23340] accepting connections
+[Fri Mar  6 15:05:22.810 2009] [23340] rotating indices (seamless=0)
+[Fri Mar  6 15:05:22.842 2009] [23340] rotating index 'main': success
+[Fri Mar  6 15:05:22.842 2009] [23340] rotating finished
+[Sat Mar 14 23:52:15.634 2009] [23340] rotating indices (seamless=0)
+[Sat Mar 14 23:52:15.642 2009] [23340] rotating index 'main': success
+[Sat Mar 14 23:52:15.642 2009] [23340] rotating finished
+[Sat Mar 14 23:52:41.530 2009] [23340] caught SIGTERM, shutting down
+[Sat Mar 14 23:52:41.573 2009] [23340] shutdown complete
+[Sat Mar 14 23:53:14.551 2009] [  966] accepting connections
+[Tue Mar 17 17:19:49.921 2009] [  966] caught SIGTERM, shutting down
+[Tue Mar 17 17:19:49.968 2009] [  966] shutdown complete
+[Tue Mar 17 17:20:30.205 2009] [ 5815] accepting connections
+[Fri Mar 20 18:02:48.449 2009] [ 5815] caught SIGTERM, shutting down
+[Fri Mar 20 18:02:48.464 2009] [ 5815] shutdown complete
+[Fri Mar 20 18:03:32.478 2009] [28206] accepting connections
+[Fri Mar 27 02:20:57.807 2009] [28206] caught SIGTERM, shutting down
+[Fri Mar 27 02:20:57.842 2009] [28206] shutdown complete
+[Fri Mar 27 02:21:29.863 2009] [21391] accepting connections
+[Fri Mar 27 02:22:47.799 2009] [21391] caught SIGTERM, shutting down
+[Fri Mar 27 02:22:47.799 2009] [21391] shutdown complete
+[Fri Mar 27 02:23:24.142 2009] [21690] accepting connections
+[Fri Mar 27 18:40:03.972 2009] [21690] caught SIGTERM, shutting down
+[Fri Mar 27 18:40:04.014 2009] [21690] shutdown complete
+[Fri Mar 27 18:40:33.486 2009] [ 5490] accepting connections
+[Tue Mar 31 10:36:08.478 2009] [ 5490] caught SIGTERM, shutting down
+[Tue Mar 31 10:36:08.495 2009] [ 5490] shutdown complete
+[Tue Mar 31 10:36:41.504 2009] [17766] accepting connections
+[Fri Apr  3 01:41:10.634 2009] [16808] accepting connections
+[Fri Apr  3 15:50:35.204 2009] [16808] caught SIGTERM, shutting down
+[Fri Apr  3 15:50:35.223 2009] [16808] shutdown complete
+[Fri Apr  3 15:51:13.394 2009] [31553] accepting connections
+[Mon Apr  6 15:48:27.871 2009] [31553] caught SIGTERM, shutting down
+[Mon Apr  6 15:48:27.888 2009] [31553] shutdown complete
+[Mon Apr  6 15:48:58.194 2009] [23327] accepting connections
+[Sun Apr 12 13:53:13.801 2009] [23327] caught SIGTERM, shutting down
+[Sun Apr 12 13:53:13.841 2009] [23327] shutdown complete
+[Sun Apr 12 13:54:07.263 2009] [ 6366] accepting connections
+[Fri Apr 17 00:54:16.808 2009] [ 6366] caught SIGTERM, shutting down
+[Fri Apr 17 00:54:17.201 2009] [ 6366] shutdown complete
+[Fri Apr 17 00:55:04.367 2009] [10702] accepting connections
+[Mon Apr 20 16:47:07.614 2009] [10702] caught SIGTERM, shutting down
+[Mon Apr 20 16:47:07.641 2009] [10702] shutdown complete
+[Mon Apr 20 16:47:30.948 2009] [27221] accepting connections
+[Mon Apr 27 23:55:53.851 2009] [27221] caught SIGTERM, shutting down
+[Mon Apr 27 23:55:53.892 2009] [27221] shutdown complete
+[Mon Apr 27 23:56:24.843 2009] [21107] accepting connections
+[Thu May  7 16:27:18.305 2009] [21107] caught SIGTERM, shutting down
+[Thu May  7 16:27:18.322 2009] [21107] shutdown complete
+[Thu May  7 16:29:32.479 2009] [24359] accepting connections
+[Mon May 11 09:58:41.115 2009] [24359] caught SIGTERM, shutting down
+[Mon May 11 09:58:41.141 2009] [24359] shutdown complete
+[Mon May 11 09:59:02.363 2009] [ 1239] accepting connections
+[Mon May 11 09:59:14.903 2009] [ 1239] caught SIGTERM, shutting down
+[Mon May 11 09:59:14.907 2009] [ 1239] shutdown complete
+[Mon May 11 09:59:38.542 2009] [ 1337] accepting connections
+[Mon May 11 15:20:46.020 2009] [ 1337] caught SIGTERM, shutting down
+[Mon May 11 15:20:46.021 2009] [ 1337] shutdown complete
+[Mon May 11 15:21:16.457 2009] [32656] accepting connections
+[Mon May 18 16:41:47.440 2009] [32656] caught SIGTERM, shutting down
+[Mon May 18 16:41:47.453 2009] [32656] shutdown complete
+[Mon May 18 16:42:19.354 2009] [22777] accepting connections
+[Tue May 19 22:47:35.913 2009] [22777] caught SIGTERM, shutting down
+[Tue May 19 22:47:35.953 2009] [22777] shutdown complete
+[Tue May 19 22:48:10.247 2009] [ 6802] accepting connections
+[Fri May 22 13:39:49.843 2009] [ 6802] caught SIGTERM, shutting down
+[Fri May 22 13:39:49.864 2009] [ 6802] shutdown complete
+[Fri May 22 13:40:18.048 2009] [14343] accepting connections
+[Tue Jun  2 11:20:36.361 2009] [14343] caught SIGTERM, shutting down
+[Tue Jun  2 11:20:36.378 2009] [14343] shutdown complete
+[Tue Jun  2 11:21:18.741 2009] [11943] accepting connections
+[Fri Jun  5 14:29:52.714 2009] [11943] caught SIGTERM, shutting down
+[Fri Jun  5 14:29:52.730 2009] [11943] shutdown complete
+[Fri Jun  5 14:30:19.298 2009] [28978] accepting connections
+[Fri Jun 12 23:15:54.877 2009] [28978] caught SIGTERM, shutting down
+[Fri Jun 12 23:15:54.908 2009] [28978] shutdown complete
+[Fri Jun 12 23:16:29.276 2009] [30500] accepting connections
+[Tue Jun 16 14:48:36.587 2009] [30500] caught SIGTERM, shutting down
+[Tue Jun 16 14:48:36.612 2009] [30500] shutdown complete
+[Tue Jun 16 14:48:56.737 2009] [19075] accepting connections
+[Thu Jun 25 16:15:51.037 2009] [19075] caught SIGTERM, shutting down
+[Thu Jun 25 16:15:51.069 2009] [19075] shutdown complete
+[Thu Jun 25 16:16:14.687 2009] [ 1500] accepting connections
+[Fri Jul  3 16:14:16.138 2009] [ 1500] caught SIGTERM, shutting down
+[Fri Jul  3 16:14:16.182 2009] [ 1500] shutdown complete
+[Fri Jul  3 16:14:43.771 2009] [ 3746] accepting connections
+[Mon Jul 27 22:37:56.689 2009] [ 3746] caught SIGTERM, shutting down
+[Mon Jul 27 22:37:56.719 2009] [ 3746] shutdown complete
+[Mon Jul 27 22:38:28.758 2009] [23125] accepting connections
+[Fri Aug  7 15:23:10.113 2009] [23125] caught SIGTERM, shutting down
+[Fri Aug  7 15:23:10.131 2009] [23125] shutdown complete
+[Fri Aug  7 15:23:44.808 2009] [12034] accepting connections
+[Tue Aug 11 10:26:51.190 2009] [12034] caught SIGTERM, shutting down
+[Tue Aug 11 10:26:51.201 2009] [12034] shutdown complete
+[Tue Aug 11 10:26:55.848 2009] [16861] accepting connections
+[Fri Aug 21 14:22:03.615 2009] [16861] caught SIGTERM, shutting down
+[Fri Aug 21 14:22:03.669 2009] [16861] shutdown complete
+[Fri Aug 21 14:22:36.043 2009] [29649] accepting connections
+[Fri Aug 28 15:52:13.531 2009] [29649] caught SIGTERM, shutting down
+[Fri Aug 28 15:52:13.550 2009] [29649] shutdown complete
+[Fri Aug 28 15:54:00.773 2009] [16750] accepting connections
+[Mon Sep  7 14:15:58.370 2009] [16750] caught SIGTERM, shutting down
+[Mon Sep  7 14:15:58.379 2009] [16750] shutdown complete
+[Mon Sep  7 14:16:21.454 2009] [28691] accepting connections
+[Fri Sep 11 15:01:20.155 2009] [28691] caught SIGTERM, shutting down
+[Fri Sep 11 15:01:20.216 2009] [28691] shutdown complete
+[Fri Sep 11 15:01:47.538 2009] [32582] accepting connections
+[Sat Sep 12 23:49:32.640 2009] [32582] caught SIGTERM, shutting down
+[Fri Sep 18 14:33:22.427 2009] [ 1371] accepting connections
+[Tue Sep 29 10:49:36.908 2009] [ 1371] caught SIGTERM, shutting down
+[Tue Sep 29 10:49:37.026 2009] [ 1371] shutdown complete
+[Tue Sep 29 10:50:07.411 2009] [16313] accepting connections
+[Mon Oct  5 13:43:00.566 2009] [16313] caught SIGTERM, shutting down
+[Mon Oct  5 13:43:00.588 2009] [16313] shutdown complete
+[Mon Oct  5 13:43:25.155 2009] [20715] accepting connections
+[Thu Oct 22 15:13:58.533 2009] [20715] caught SIGTERM, shutting down
+[Thu Oct 22 15:13:58.989 2009] [20715] shutdown complete
+[Thu Oct 22 15:14:23.074 2009] [ 3987] accepting connections
+[Fri Oct 23 14:43:04.987 2009] [ 3987] caught SIGTERM, shutting down
+[Fri Oct 23 14:43:05.005 2009] [ 3987] shutdown complete
+[Fri Oct 23 14:43:38.570 2009] [11540] accepting connections
+[Mon Oct 26 11:44:51.037 2009] [27994] accepting connections
+[Sat Oct 31 19:27:55.242 2009] [27994] caught SIGTERM, shutting down
+[Sat Oct 31 19:27:55.250 2009] [27994] shutdown complete
+[Sat Oct 31 19:28:21.276 2009] [31118] accepting connections
+[Sun Nov  8 20:44:15.919 2009] [ 9445] accepting connections
+[Tue Nov 10 10:58:46.778 2009] [ 9445] caught SIGTERM, shutting down
+[Tue Nov 10 10:58:46.788 2009] [ 9445] shutdown complete
+[Tue Nov 10 10:59:16.770 2009] [ 6811] accepting connections
+[Fri Nov 13 14:51:15.396 2009] [ 6811] caught SIGTERM, shutting down
+[Fri Nov 13 14:51:15.435 2009] [ 6811] shutdown complete
+[Fri Nov 13 14:51:47.010 2009] [  406] accepting connections
+[Fri Nov 20 14:16:45.791 2009] [  406] caught SIGTERM, shutting down
+[Fri Nov 20 14:16:45.824 2009] [  406] shutdown complete
+[Fri Nov 20 14:17:08.110 2009] [22334] accepting connections
+[Mon Nov 30 16:08:33.782 2009] [22334] caught SIGTERM, shutting down
+[Mon Nov 30 16:08:33.801 2009] [22334] shutdown complete
+[Mon Nov 30 16:08:58.713 2009] [31853] accepting connections
+[Fri Dec  4 14:54:27.159 2009] [31853] rotating indices (seamless=0)
+[Fri Dec  4 14:54:27.184 2009] [31853] rotating index 'main': success
+[Fri Dec  4 14:54:27.184 2009] [31853] rotating finished
+[Mon Dec 14 17:08:39.564 2009] [31853] rotating indices (seamless=0)
+[Mon Dec 14 17:08:39.610 2009] [31853] rotating index 'main': success
+[Mon Dec 14 17:08:39.610 2009] [31853] rotating finished
+[Mon Jan  4 15:11:36.448 2010] [ 5121] accepting connections
+[Mon Jan 11 14:41:38.680 2010] [ 5121] caught SIGTERM, shutting down
+[Mon Jan 11 14:41:38.688 2010] [ 5121] shutdown complete
+[Mon Jan 11 14:42:19.599 2010] [16187] accepting connections
+[Fri Jan 15 14:34:10.237 2010] [16187] rotating indices (seamless=0)
+[Fri Jan 15 14:34:10.282 2010] [16187] rotating index 'main': success
+[Fri Jan 15 14:34:10.282 2010] [16187] rotating finished
+[Fri Jan 15 16:50:13.616 2010] [16187] rotating indices (seamless=0)
+[Fri Jan 15 16:50:13.618 2010] [16187] rotating index 'main': success
+[Fri Jan 15 16:50:13.618 2010] [16187] rotating finished
+[Tue Jan 19 09:32:55.559 2010] [16187] rotating indices (seamless=0)
+[Tue Jan 19 09:32:55.621 2010] [16187] rotating index 'main': success
+[Tue Jan 19 09:32:55.621 2010] [16187] rotating finished
+[Fri Jan 22 13:38:15.529 2010] [16187] rotating indices (seamless=0)
+[Fri Jan 22 13:38:15.554 2010] [16187] rotating index 'main': success
+[Fri Jan 22 13:38:15.554 2010] [16187] rotating finished
+[Tue Jan 26 16:04:27.508 2010] [16187] rotating indices (seamless=0)
+[Tue Jan 26 16:04:27.533 2010] [16187] rotating index 'main': success
+[Tue Jan 26 16:04:27.533 2010] [16187] rotating finished
+[Fri Jan 29 14:05:52.516 2010] [16187] rotating indices (seamless=0)
+[Fri Jan 29 14:05:52.537 2010] [16187] rotating index 'main': success
+[Fri Jan 29 14:05:52.537 2010] [16187] rotating finished
+[Fri Feb  5 12:07:39.182 2010] [16187] rotating indices (seamless=0)
+[Fri Feb  5 12:07:39.203 2010] [16187] rotating index 'main': success
+[Fri Feb  5 12:07:39.203 2010] [16187] rotating finished
+[Fri Feb 12 14:34:27.142 2010] [16187] rotating indices (seamless=0)
+[Fri Feb 12 14:34:27.171 2010] [16187] rotating index 'main': success
+[Fri Feb 12 14:34:27.171 2010] [16187] rotating finished
+[Mon Feb 22 13:46:16.082 2010] [16187] rotating indices (seamless=0)
+[Mon Feb 22 13:46:16.124 2010] [16187] rotating index 'main': success
+[Mon Feb 22 13:46:16.124 2010] [16187] rotating finished
+[Fri Mar  5 15:46:38.727 2010] [16187] rotating indices (seamless=0)
+[Fri Mar  5 15:46:38.757 2010] [16187] rotating index 'main': success
+[Fri Mar  5 15:46:38.757 2010] [16187] rotating finished
+[Mon Mar  8 13:48:27.516 2010] [16187] rotating indices (seamless=0)
+[Mon Mar  8 13:48:27.531 2010] [16187] rotating index 'main': success
+[Mon Mar  8 13:48:27.531 2010] [16187] rotating finished
+[Fri Mar 12 15:03:39.157 2010] [16187] rotating indices (seamless=0)
+[Fri Mar 12 15:03:39.199 2010] [16187] rotating index 'main': success
+[Fri Mar 12 15:03:39.199 2010] [16187] rotating finished
+[Fri Mar 19 11:47:53.293 2010] [16187] rotating indices (seamless=0)
+[Fri Mar 19 11:47:53.319 2010] [16187] rotating index 'main': success
+[Fri Mar 19 11:47:53.319 2010] [16187] rotating finished
+[Fri Mar 26 11:18:12.138 2010] [16187] rotating indices (seamless=0)
+[Fri Mar 26 11:18:12.155 2010] [16187] rotating index 'main': success
+[Fri Mar 26 11:18:12.155 2010] [16187] rotating finished
+[Thu Apr  8 16:27:37.200 2010] [16187] rotating indices (seamless=0)
+[Thu Apr  8 16:27:38.275 2010] [16187] rotating index 'main': success
+[Thu Apr  8 16:27:38.275 2010] [16187] rotating finished
+[Mon Apr 12 16:41:14.398 2010] [16187] rotating indices (seamless=0)
+[Mon Apr 12 16:41:14.435 2010] [16187] rotating index 'main': success
+[Mon Apr 12 16:41:14.435 2010] [16187] rotating finished
+[Tue Apr 20 12:44:23.728 2010] [16187] rotating indices (seamless=0)
+[Tue Apr 20 12:44:23.771 2010] [16187] rotating index 'main': success
+[Tue Apr 20 12:44:23.771 2010] [16187] rotating finished
+[Fri Apr 23 12:28:51.828 2010] [16187] rotating indices (seamless=0)
+[Fri Apr 23 12:28:52.324 2010] [16187] rotating index 'main': success
+[Fri Apr 23 12:28:52.324 2010] [16187] rotating finished
+[Sun Apr 25 06:44:46.897 2010] [16187] caught SIGTERM, shutting down
+[Sun Apr 25 06:44:47.105 2010] [16187] shutdown complete
+[Tue Apr 27 12:06:45.883 2010] [30375] accepting connections
+[Fri Apr 30 12:12:23.788 2010] [30375] rotating indices (seamless=0)
+[Fri Apr 30 12:12:23.812 2010] [30375] rotating index 'main': success
+[Fri Apr 30 12:12:23.812 2010] [30375] rotating finished
+[Fri Apr 30 12:13:42.732 2010] [30375] rotating indices (seamless=0)
+[Fri Apr 30 12:13:42.734 2010] [30375] rotating index 'main': success
+[Fri Apr 30 12:13:42.734 2010] [30375] rotating finished
+[Fri Apr 30 12:14:10.607 2010] [30375] rotating indices (seamless=0)
+[Fri Apr 30 12:14:10.610 2010] [30375] rotating index 'main': success
+[Fri Apr 30 12:14:10.610 2010] [30375] rotating finished
+[Fri Apr 30 12:14:41.973 2010] [30375] rotating indices (seamless=0)
+[Fri Apr 30 12:14:41.975 2010] [30375] rotating index 'main': success
+[Fri Apr 30 12:14:41.975 2010] [30375] rotating finished
+[Fri May  7 13:42:44.562 2010] [30375] rotating indices (seamless=0)
+[Fri May  7 13:42:44.705 2010] [30375] rotating index 'main': success
+[Fri May  7 13:42:44.706 2010] [30375] rotating finished
+[Fri May 14 12:45:35.837 2010] [30375] rotating indices (seamless=0)
+[Fri May 14 12:45:35.883 2010] [30375] rotating index 'main': success
+[Fri May 14 12:45:35.883 2010] [30375] rotating finished
+[Mon May 17 10:54:30.492 2010] [30375] rotating indices (seamless=0)
+[Mon May 17 10:54:30.545 2010] [30375] rotating index 'main': success
+[Mon May 17 10:54:30.545 2010] [30375] rotating finished
+[Thu May 20 15:35:16.535 2010] [30375] rotating indices (seamless=0)
+[Thu May 20 15:35:16.568 2010] [30375] rotating index 'main': success
+[Thu May 20 15:35:16.568 2010] [30375] rotating finished
+[Fri May 21 16:27:15.879 2010] [30375] rotating indices (seamless=0)
+[Fri May 21 16:27:15.892 2010] [30375] rotating index 'main': success
+[Fri May 21 16:27:15.892 2010] [30375] rotating finished
+[Mon May 24 15:26:00.341 2010] [30375] rotating indices (seamless=0)
+[Mon May 24 15:26:00.353 2010] [30375] rotating index 'main': success
+[Mon May 24 15:26:00.353 2010] [30375] rotating finished
+[Mon May 31 16:13:36.481 2010] [30375] rotating indices (seamless=0)
+[Mon May 31 16:13:36.520 2010] [30375] rotating index 'main': success
+[Mon May 31 16:13:36.520 2010] [30375] rotating finished
+[Fri Jun  4 12:16:38.368 2010] [30375] rotating indices (seamless=0)
+[Fri Jun  4 12:16:38.468 2010] [30375] rotating index 'main': success
+[Fri Jun  4 12:16:38.468 2010] [30375] rotating finished
+[Fri Jun 18 12:14:00.248 2010] [30375] rotating indices (seamless=0)
+[Fri Jun 18 12:14:00.326 2010] [30375] rotating index 'main': success
+[Fri Jun 18 12:14:00.326 2010] [30375] rotating finished
+[Fri Jun 25 15:41:38.414 2010] [30375] rotating indices (seamless=0)
+[Fri Jun 25 15:41:38.448 2010] [30375] rotating index 'main': success
+[Fri Jun 25 15:41:38.448 2010] [30375] rotating finished
+[Fri Jul  2 11:25:18.898 2010] [30375] rotating indices (seamless=0)
+[Fri Jul  2 11:25:18.942 2010] [30375] rotating index 'main': success
+[Fri Jul  2 11:25:18.942 2010] [30375] rotating finished
+[Fri Jul  9 10:58:30.397 2010] [30375] rotating indices (seamless=0)
+[Fri Jul  9 10:58:30.432 2010] [30375] rotating index 'main': success
+[Fri Jul  9 10:58:30.433 2010] [30375] rotating finished
+[Sat Jul 10 23:43:54.426 2010] [30375] caught SIGTERM, shutting down
+[Sat Jul 10 23:43:54.530 2010] [30375] shutdown complete
+[Mon Jul 12 10:59:57.853 2010] [10778] accepting connections
+[Tue Jul 13 10:51:18.147 2010] [10778] rotating indices (seamless=0)
+[Tue Jul 13 10:51:18.148 2010] [10778] rotating index 'main': success
+[Tue Jul 13 10:51:18.148 2010] [10778] rotating finished
+[Fri Jul 16 11:00:16.768 2010] [10778] rotating indices (seamless=0)
+[Fri Jul 16 11:00:16.778 2010] [10778] rotating index 'main': success
+[Fri Jul 16 11:00:16.778 2010] [10778] rotating finished
+[Fri Jul 23 12:04:27.293 2010] [10778] rotating indices (seamless=0)
+[Fri Jul 23 12:04:27.377 2010] [10778] rotating index 'main': success
+[Fri Jul 23 12:04:27.377 2010] [10778] rotating finished
+[Tue Jul 27 12:46:58.439 2010] [10778] rotating indices (seamless=0)
+[Tue Jul 27 12:46:58.456 2010] [10778] rotating index 'main': success
+[Tue Jul 27 12:46:58.456 2010] [10778] rotating finished
+[Mon Aug  2 15:34:31.533 2010] [10778] rotating indices (seamless=0)
+[Mon Aug  2 15:34:31.555 2010] [10778] rotating index 'main': success
+[Mon Aug  2 15:34:31.555 2010] [10778] rotating finished
+[Fri Aug  6 12:27:36.053 2010] [10778] rotating indices (seamless=0)
+[Fri Aug  6 12:27:36.978 2010] [10778] rotating index 'main': success
+[Fri Aug  6 12:27:36.978 2010] [10778] rotating finished
+[Mon Aug  9 11:19:40.333 2010] [10778] rotating indices (seamless=0)
+[Mon Aug  9 11:19:40.460 2010] [10778] rotating index 'main': success
+[Mon Aug  9 11:19:40.460 2010] [10778] rotating finished
+[Fri Aug 13 16:24:48.113 2010] [10778] rotating indices (seamless=0)
+[Fri Aug 13 16:24:48.128 2010] [10778] rotating index 'main': success
+[Fri Aug 13 16:24:48.128 2010] [10778] rotating finished
+[Fri Aug 20 15:54:50.795 2010] [10778] rotating indices (seamless=0)
+[Fri Aug 20 15:54:50.806 2010] [10778] rotating index 'main': success
+[Fri Aug 20 15:54:50.806 2010] [10778] rotating finished
+[Thu Sep  2 15:45:41.613 2010] [10778] rotating indices (seamless=0)
+[Thu Sep  2 15:45:42.070 2010] [10778] rotating index 'main': success
+[Thu Sep  2 15:45:42.070 2010] [10778] rotating finished
+[Fri Sep  3 14:21:03.308 2010] [10778] rotating indices (seamless=0)
+[Fri Sep  3 14:21:03.642 2010] [10778] rotating index 'main': success
+[Fri Sep  3 14:21:03.642 2010] [10778] rotating finished
+[Fri Sep  3 15:04:47.072 2010] [10778] rotating indices (seamless=0)
+[Fri Sep  3 15:04:47.074 2010] [10778] rotating index 'main': success
+[Fri Sep  3 15:04:47.074 2010] [10778] rotating finished
+[Fri Sep 10 13:49:14.074 2010] [10778] rotating indices (seamless=0)
+[Fri Sep 10 13:49:14.123 2010] [10778] rotating index 'main': success
+[Fri Sep 10 13:49:14.123 2010] [10778] rotating finished
+[Fri Sep 17 15:19:06.352 2010] [10778] rotating indices (seamless=0)
+[Fri Sep 17 15:19:06.359 2010] [10778] rotating index 'main': success
+[Fri Sep 17 15:19:06.359 2010] [10778] rotating finished
+[Tue Sep 21 06:20:45.834 2010] [10778] caught SIGTERM, shutting down
+[Tue Sep 21 06:20:45.959 2010] [10778] shutdown complete
+[Tue Sep 21 11:40:43.808 2010] [14589] accepting connections
+[Fri Sep 24 14:01:41.881 2010] [14589] rotating indices (seamless=0)
+[Fri Sep 24 14:01:41.939 2010] [14589] rotating index 'main': success
+[Fri Sep 24 14:01:41.939 2010] [14589] rotating finished
+[Wed Sep 29 23:54:20.857 2010] [14589] rotating indices (seamless=0)
+[Wed Sep 29 23:54:20.930 2010] [14589] rotating index 'main': success
+[Wed Sep 29 23:54:20.930 2010] [14589] rotating finished
+[Fri Oct  1 14:20:33.330 2010] [14589] rotating indices (seamless=0)
+[Fri Oct  1 14:20:34.074 2010] [14589] rotating index 'main': success
+[Fri Oct  1 14:20:34.074 2010] [14589] rotating finished
+[Mon Oct  4 14:16:42.901 2010] [14589] rotating indices (seamless=0)
+[Mon Oct  4 14:16:42.913 2010] [14589] rotating index 'main': success
+[Mon Oct  4 14:16:42.913 2010] [14589] rotating finished
+[Fri Oct  8 12:31:16.871 2010] [14589] rotating indices (seamless=0)
+[Fri Oct  8 12:31:17.001 2010] [14589] rotating index 'main': success
+[Fri Oct  8 12:31:17.001 2010] [14589] rotating finished
+[Mon Oct 18 15:15:36.023 2010] [14589] rotating indices (seamless=0)
+[Mon Oct 18 15:15:36.041 2010] [14589] rotating index 'main': success
+[Mon Oct 18 15:15:36.041 2010] [14589] rotating finished
+[Fri Oct 22 13:53:07.514 2010] [14589] rotating indices (seamless=0)
+[Fri Oct 22 13:53:07.566 2010] [14589] rotating index 'main': success
+[Fri Oct 22 13:53:07.566 2010] [14589] rotating finished
+[Fri Oct 29 15:23:16.810 2010] [14589] rotating indices (seamless=0)
+[Fri Oct 29 15:23:16.836 2010] [14589] rotating index 'main': success
+[Fri Oct 29 15:23:16.836 2010] [14589] rotating finished
+[Fri Nov  5 12:23:31.971 2010] [14589] rotating indices (seamless=0)
+[Fri Nov  5 12:23:31.990 2010] [14589] rotating index 'main': success
+[Fri Nov  5 12:23:31.990 2010] [14589] rotating finished
+[Fri Nov 12 14:57:40.538 2010] [14589] rotating indices (seamless=0)
+[Fri Nov 12 14:57:40.558 2010] [14589] rotating index 'main': success
+[Fri Nov 12 14:57:40.558 2010] [14589] rotating finished
+[Fri Nov 26 13:25:21.719 2010] [14589] rotating indices (seamless=0)
+[Fri Nov 26 13:25:21.737 2010] [14589] rotating index 'main': success
+[Fri Nov 26 13:25:21.737 2010] [14589] rotating finished
+[Fri Dec  3 13:02:59.822 2010] [14589] rotating indices (seamless=0)
+[Fri Dec  3 13:03:00.087 2010] [14589] rotating index 'main': success
+[Fri Dec  3 13:03:00.087 2010] [14589] rotating finished
+[Mon Dec 13 14:12:12.049 2010] [14589] rotating indices (seamless=0)
+[Mon Dec 13 14:12:12.279 2010] [14589] rotating index 'main': success
+[Mon Dec 13 14:12:12.279 2010] [14589] rotating finished
+[Fri Jan  7 15:26:06.912 2011] [14589] rotating indices (seamless=0)
+[Fri Jan  7 15:26:06.924 2011] [14589] rotating index 'main': success
+[Fri Jan  7 15:26:06.924 2011] [14589] rotating finished
+[Fri Jan  7 15:33:14.203 2011] [14589] rotating indices (seamless=0)
+[Fri Jan  7 15:33:14.205 2011] [14589] rotating index 'main': success
+[Fri Jan  7 15:33:14.205 2011] [14589] rotating finished
+[Fri Jan 14 15:55:03.540 2011] [14589] rotating indices (seamless=0)
+[Fri Jan 14 15:55:03.557 2011] [14589] rotating index 'main': success
+[Fri Jan 14 15:55:03.557 2011] [14589] rotating finished
+[Mon Jan 17 12:54:34.878 2011] [14589] rotating indices (seamless=0)
+[Mon Jan 17 12:54:34.913 2011] [14589] rotating index 'main': success
+[Mon Jan 17 12:54:34.913 2011] [14589] rotating finished

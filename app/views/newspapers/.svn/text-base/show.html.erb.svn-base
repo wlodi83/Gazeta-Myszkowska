@@ -1,0 +1,8 @@
+<% if @newspaper.has_map? %>
+<%= @map.div(:width => 600, :height => 400) %>
+<% end %>
+
+<% if logged_in_user and logged_in_user.has_role?('Administrator') %>
+  <%= link_to 'Edit', edit_newspaper_path(@newspaper) %> |
+  <%= link_to 'Back', newspapers_path %> 
+<% end %>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+  <title>Gazeta Myszkowska :: Tygodnik Powiatowy :: <%= yield(:title) || "Myszków :: Żarki :: Poraj :: Koziegłowy :: Niegowa" %></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/articles/rss.rxml" />
+  <%= stylesheet_link_tag 'article_show', 'lightbox' %>
+  <%= javascript_include_tiny_mce_if_used %>
+  <%= tiny_mce if using_tiny_mce? %>  
+   <%= javascript_include_tag 'prototype', 'effects', 'builder', 'lightbox', 'jquery', 'jquery-ui' %>
+   <script>var $j = jQuery.noConflict();</script> 
+</head>
+<body>
+<div id="container">   
+   <div id="header">
+     <div id="logo" style="float:left;margin: 5px 16px 5px 10px;">
+       <%= link_to image_tag("/images/logo.png", :border => 0), articles_url %> 
+     </div>
+     <div id="winieta" style="float:right; margin: 5px 16px 5px 10px";>
+     <object width="360" height="160">
+        <param name="movie" value="baner2.swf">
+        <embed src="/swf/baner2.swf" width="360" height="160">
+        </embed>
+     </object>      
+     </div>
+     </div>
+ <div id="faux">
+   <div id="content">
+     <% if flash[:notice] -%>
+       <div id="notice"><%= flash[:notice] %></div>
+     <% end -%>
+     <% if flash[:error] -%>
+       <div id="error"><%= flash[:error] %></div>
+     <% end -%>
+     <%= yield %>
+   </div>
+   <div id="rightmenu">
+      <%= render :partial => "/articles/search_form" %><br />
+     <div style="margin-left: 19px; margin-right: 19px;">
+     <object width="262" height="40">
+        <param name="movie" value="kurier.swf">
+        <embed src="/swf/kurier.swf" width="262" height="40">
+        </embed>
+     </object>
+     </div>
+     <br />
+       <div class="right_box_links">
+        <span style="float:right; text-decoration:none;"><%= link_to image_tag("/images/feed-icon-28x28.png", :border => 0), "/articles/rss.rxml" %></span>
+       <p style="padding-top: 8px;margin-left:8px">Wydarzenia</p>
+     </div>
+     <%= wydarzenia_img %>
+     <div class="right_content_box">
+     <ul><%= wydarzenia_partial %></ul>
+     </div>
+     <br />
+     <div style="margin-left: 19px; margin-right: 19px;">
+     <object width="262" height="400">
+        <param name="movie" value="baner.swf">
+        <embed src="/swf/baner.swf" width="262" height="400">
+        </embed>
+     </object>
+     </div>
+      <br />
+     <div class="right_box_links">
+        <span style="float:right; text-decoration:none;"><%= link_to image_tag("/images/feed-icon-28x28.png", :border => 0), "/articles/rss.rxml" %></span>
+       <p style="padding-top: 8px;margin-left:8px">Polityka</p>
+     </div>
+     <%= polityka_img %>
+     <div class="right_content_box">
+     <ul><%= polityka_partial %></ul>
+     </div>
+     <br />
+     <div class="right_box_links">
+        <span style="float:right; text-decoration:none;"><%= link_to image_tag("/images/feed-icon-28x28.png", :border => 0), "/articles/rss.rxml" %></span>
+       <p style="padding-top: 8px;margin-left:8px">Polityczny Komentarz Tygodnia</p>
+     </div>
+     <%= komentarz_img %>
+     <div class="right_content_box">
+     <ul><%= komentarz_partial %></ul>
+     </div>
+     <br />
+     <div style="margin-bottom:80px"></div>
+     <div class="right_box_links">
+        <span style="float:right; text-decoration:none;"><%= link_to image_tag("/images/feed-icon-28x28.png", :border => 0), "/articles/rss.rxml" %></span>
+       <p style="padding-top: 8px;margin-left:8px">Kultura</p>
+     </div>
+     <%= kultura_img %>
+     <div class="right_content_box">
+     <ul><%= kultura_partial %></ul>
+     </div>
+     <br />
+     <br />
+     <div class="right_box_links">
+         <span style="float:right; text-decoration:none;"><%= link_to image_tag("/images/feed-icon-28x28.png", :border => 0), "/articles/rss.rxml" %></span>
+        <p style="padding-top: 8px;margin-left:8px">Sport</p>
+     </div>
+     <%= sport_img %>
+     <div class="right_content_box">
+     <ul><%= sport_partial %></ul>
+     </div>
+     <br />
+     <div class="right_box_links_5">
+        <p style="padding-top: 8px;margin-left:8px">Myszkowska poleca:</p>
+     </div>
+     <div class="right_content_box_2">
+      <div class="mfne_banner"><%= link_to "CAŁA HISTORIA ZAKŁADU MFNE" %></div>
+       <div class="sportowiec_banner"><%= link_to "SPORTOWIEC MYSZKOWA ROKU 2008" %></div>
+       <div class="redakcyjna_poczta_banner"><%= link_to "POCZTA REDAKCYJNA MYSZKOWA" %></div>
+       <div class="podpatrzone_banner"><%= link_to "PODPATRZONE NA MIEŚCIE" %></div>
+     </div>
+     <br />
+     <div class="right_box_links_2">
+         <span style="float:right; text-decoration:none;"><%= link_to image_tag("/images/feed-icon-28x28.png", :border => 0), "/articles/rss.rxml" %></span>
+        <p style="padding-top: 8px;margin-left:8px">Gospodarka</p>
+     </div>
+     <%= gospodarka_img %>
+     <div class="right_content_box">
+     <ul><%= gospodarka_partial -%> </ul>
+     </div>
+     <br />  
+     <div class="right_box_links_3">
+         <span style="float:right; text-decoration:none;"><%= link_to image_tag("/images/feed-icon-28x28.png", :border => 0), "/articles/rss.rxml" %></span>
+        <p style="padding-top: 8px;margin-left:8px">Co? Gdzie? Kiedy?</p>
+     </div>
+     <%= co_gdzie_kiedy_img %>
+     <div class="right_content_box">
+     <ul><%= co_gdzie_kiedy_partial -%></ul>
+     </div>
+     <br />
+     <div class="right_box_links_4">
+         <span style="float:right; text-decoration:none;"><%= link_to image_tag("/images/feed-icon-28x28.png", :border => 0), "/articles/rss.rxml" %></span>
+        <p style="padding-top: 8px;margin-left:8px">Oświata</p>
+     </div>
+     <%= oswiata_img %>
+     <div class="right_content_box">
+     <ul><%= oswiata_partial -%></ul>
+     </div>
+     <br />
+   </div>
+ </div>
+   <div id="footer">
+   </div>
+</body>
+</html>

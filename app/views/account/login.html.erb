@@ -1,0 +1,14 @@
+<div class="new_user" style="position:relative">
+  <fieldset>
+  <legend>Logowanie</legend>
+<% form_for :user, :url => {:action => 'authenticate'} do |f| -%>
+  <p>
+    <label for="user_email">Adres email:</label><%= f.text_field :email, :size => 30 %>
+  </p>
+  <p>
+    <label for="user_password">Hasło:</label><%= f.password_field :password, :size => 30 %>
+  </p>
+<%= submit_tag 'Zaloguj', :class => "submit" %>
+<% end -%>
+</fieldset>
+</div>

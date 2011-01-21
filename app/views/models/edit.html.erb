@@ -1,0 +1,15 @@
+<h1>Editing model</h1>
+
+<% form_for(@model) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :filename %><br />
+    <%= f.text_field :filename %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @model %> |
+<%= link_to 'Back', models_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  day: 
+  month: 
+  week: 
+  year: 
+  number: 
+  comment: MyString
+  name: MyString
+
+two:
+  day: 
+  month: 
+  week: 
+  year: 
+  number: 
+  comment: MyString
+  name: MyString

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  quest_name: MyString
+  quest_email: MyString
+  quest_url: MyString
+  body: MyText
+
+two:
+  quest_name: MyString
+  quest_email: MyString
+  quest_url: MyString
+  body: MyText

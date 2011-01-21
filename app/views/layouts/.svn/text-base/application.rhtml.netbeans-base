@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.l//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=iso-8859-2" />
+  <title>Gazeta Myszkowska</title>
+  <%= stylesheet_link_tag 'main' %>
+  <%= javascript_include_tiny_mce_if_used %>
+  <%= tiny_mce if using_tiny_mce? %>
+  <%= javascript_include_tag :defaults %>
+
+  <% if ! @map.nil? %>
+    <%= GMap.header %>
+    <%= @map.to_html %>
+    <%= javascript_include_tag 'gmap_edit' %>
+   <% end %>
+  <% yield :head %>
+  <link href="http://localhost:3000/articles" rel="alternate" title="RSS"
+        type="application/rss+xml" />
+</head>
+<body>
+<div id="container"> 
+   <div id="header">
+      <%= image_tag 'logo.jpg', :alt => "Gazeta Myszkowska" %>
+     </div>
+   <div id="sidemenu">
+     <%= render :partial => 'layouts/menu' %>
+     <hr size="1" width="90%" align="left"/>
+     <%= render(:partial => 'layouts/category', :collection => Category.find(:all)) %>
+     <hr size="1" width="90%" align="left"/>
+     <%= mail_to("wlodi@jamicans.com", "Send message", 
+       :subject => "Pytanie techniczne od użytkownika",
+       :encode => "javascript") %>
+   </div>
+   <div id="content">
+     <% if flash[:notice] -%>
+       <div id="notice"><%= flash[:notice] %></div>
+     <% end -%>
+     <% if flash[:error] -%>
+       <div id="error"><%= flash[:error] %></div>
+     <% end -%>
+     <%= yield %>
+   </div>
+</div>
+</body>
+</html>

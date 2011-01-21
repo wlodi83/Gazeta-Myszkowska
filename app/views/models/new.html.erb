@@ -1,0 +1,10 @@
+<h2>New model</h2>
+
+<%= error_messages_for :model %>
+
+<% form_for(:model,
+            :url => models_path,
+            :html => { :multipart => true }) do |f| -%>
+Upload model:&nbsp<%= f.file_field :uploaded_data %><br />
+<%= submit_tag("Create")%>
+<% end -%>

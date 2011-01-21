@@ -1,0 +1,20 @@
+<%= javascript_include_tag 'prototype' %>
+<div class="comment_show">
+  <div id="body"><%=h @comment.body %></div>
+<div id="article_title">Komentarz artykułu: <%= link_to "#{@comment.article.title}", article_url(@comment.article) %></div>
+<div id="username"><i><%= link_to "#{@comment.user.username}", user_path(@comment.user) %></i></div>
+<div id="actions">
+<% if @comment.published == true %>
+<div id="non-authorization"><%= link_to_remote 'Usuń autoryzację',
+                   :url => {:controller => 'comments', :action => 'non_authorization'}, 
+                   :with => "'comment_id='+'#{@comment.id}'" %> |</div>  
+<% else %>
+<div id="authorization"><%= link_to_remote 'Autoryzuj',
+                   :url => {:controller => 'comments', :action => 'authorization'}, 
+                   :with => "'comment_id='+'#{@comment.id}'" %> |</div>
+<% end -%>
+&nbsp;<%= link_to 'Usuń', { :id => @comment, :article_id => @comment.article }, :confirm => 'Czy napewno usunąć komentarz z serwisu?', :method => :delete %> |
+<%= link_to 'Edytuj', edit_comment_path(@comment) %> |
+<%= link_to 'Powrót', comments_path %>
+</div>
+</div>

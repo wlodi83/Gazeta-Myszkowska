@@ -1,0 +1,16 @@
+xml.instruct!
+xml.rss "version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/" do
+ xml.channel do
+   xml.title       "GAZETA MYSZKOWSKA"
+   xml.link        articles_url
+   xml.description "Artyku³y Gazety Myszkowskiej"
+   @articles.each do |article|
+     xml.item do
+       xml.title       article.title
+       xml.link        article_url(article)
+       xml.description article.synopsis
+       xml.guid        article_url(article)
+     end
+   end
+ end
+end

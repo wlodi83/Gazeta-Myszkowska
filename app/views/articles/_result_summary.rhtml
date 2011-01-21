@@ -1,0 +1,5 @@
+<% if @articles.empty? -%>
+  <div id="not_found"><strong style="font-size:20px;color:red;margin-right: 3px;">!</strong> Brak wyników dla zapytania <strong>'<%= h params[:q] %>'</strong></div>
+<% else %>
+  <div id="found">Znaleziono: <strong><%= @search.total_entries %></strong></div>
+<% end -%>

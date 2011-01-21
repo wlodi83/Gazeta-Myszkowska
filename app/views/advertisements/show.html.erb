@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @advertisement.name %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h @advertisement.height %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%=h @advertisement.width %>
+</p>
+
+<p>
+  <b>Page:</b>
+  <%=h @advertisement.page %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @advertisement.price %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%=h @advertisement.color %>
+</p>
+
+
+<%= link_to 'Edit', edit_advertisement_path(@advertisement) %> |
+<%= link_to 'Back', advertisements_path %>

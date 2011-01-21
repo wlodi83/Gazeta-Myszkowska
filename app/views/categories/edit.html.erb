@@ -1,0 +1,24 @@
+<h2>Edit Category</h2>
+<%= error_messages_for :category %>
+<% form_for(:category,
+            :url => category_path(@category), 
+            :html => {:method => :put }) do |f| -%>
+<p>Name:<br /><%= f.text_field :name, :size => 60 %></p>
+<p>Subcategories:</p>
+  <% if @category.children.empty? %>
+   <%= puts "no subcategories" %>
+   <% else %>
+    <ul>
+      <% @category.children.each do |subcategory| %>
+      <li>
+      <%= link_to subcategory.name, category_articles_url(:category_id => subcategory) %>
+      [<%= link_to 'Edit', edit_category_path(subcategory) %>]
+      [<%= link_to 'Delete', category_path(subcategory), :method => :delete, 
+                          :confirm => 'Are you sure you wish to delete this category?' %>]                       
+      </li>
+    <% end %>
+    </ul>
+    <% end %>
+<br />
+<%= submit_tag 'Save' %> or <%= link_to 'cancel', admin_categories_url %>
+<% end %>

@@ -1,0 +1,3 @@
+<div id="authorization"><%= link_to_remote 'Autoryzuj',
+                   :url => {:controller => 'comments', :action => 'authorization'}, 
+                   :with => "'comment_id='+'#{@comment.id}'" %> |</div>

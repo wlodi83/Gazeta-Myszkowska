@@ -1,0 +1,8 @@
+<h2>Login</h2>
+
+
+<% form_for :user, :url => {:action => 'authenticate'} do |f| -%>
+  <p>Email:<br /><%= f.text_field :email, :size => 30 %></p>
+  <p>Password:<br /><%= f.password_field :password, :size => 30 %></p>
+<%= submit_tag 'Log in', :disable_with => "Signing in&hellip;" %>
+<% end -%>

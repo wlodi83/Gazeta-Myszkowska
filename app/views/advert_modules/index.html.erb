@@ -1,0 +1,15 @@
+<% title("Moduły reklamowe w Gazecie Myszkowskiej") %>
+<h3 style="color:red">NOWY CENNIK MODUŁÓW</h3><br />
+<h4>Cennik w wersji PDF do pobrania: <b><%= link_to "Pobierz", "/images/cennik/nowy_cennik_myszkowska.pdf" %></b></h4><br /><br />
+<h4  style="font-size: 17.3px;">Cennik modułów reklamowych w Gazecie Myszkowskiej</h4>
+<%= 
+  @modules = AdvertModule.find(:all, :select => "distinct(name),id")
+  collection_select(:name, :id, @modules, :name, :name, options = {:prompt => "Wybierz moduł..."})
+%>
+<%= observe_field :name_id, :url => {:action => 'change_module'}, :with => :name %>
+<br />
+<br />
+<div id="module">
+</div>
+
+

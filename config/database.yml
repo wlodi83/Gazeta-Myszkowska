@@ -1,0 +1,24 @@
+#development:
+ # adapter: mysql
+ # encoding: utf8
+ # database: gazeta
+ # username: root
+ # password: 
+ # encoding: utf8  
+ # socket: /var/tmp/mysqld/mysqld.sock
+#test:
+#  adapter: mysql
+#  encoding: utf8
+#  database: gazeta_myszkowska_test
+#  username: gazeta
+#  password: gde31of8
+#  #socket: /var/lib/mysql/mysql.sock
+production:
+  adapter: mysql
+  encoding: utf8
+  database: my_986
+  username: my_986a
+  password: deftones
+  host: sql.wlodi.megiteam.pl
+  encoding: utf8  
+  socket: /var/run/mysqld/mysqld.sock

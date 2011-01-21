@@ -1,0 +1,6 @@
+<div id="search">
+<% form_tag({:controller=> "articles", :action => "search" }, :method => :get, :id => 'searchform') do %>
+<%= text_field_tag "q", params[:q], :class => 'box' %>
+<%= submit_tag 'Szukaj', :class => 'btn' %>
+<% end %>
+</div>

@@ -1,0 +1,31 @@
+<h1>Listing advertisements</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Height</th>
+    <th>Width</th>
+    <th>Page</th>
+    <th>Price</th>
+    <th>Color</th>
+  </tr>
+
+<% for advertisement in @advertisements %>
+  <tr>
+    <td><%=h advertisement.name %></td>
+    <td><%=h advertisement.height %></td>
+    <td><%=h advertisement.width %></td>
+    <td><%=h advertisement.page %></td>
+    <td><%=h advertisement.price %></td>
+    <td><%=h advertisement.color %></td>
+    <td><%= link_to 'Show', advertisement %></td>
+    <td><%= link_to 'Edit', edit_advertisement_path(advertisement) %></td>
+    <td><%= link_to 'Destroy', advertisement, :confirm => 'Are you sure?', :method => :delete %></td>
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New advertisement', new_advertisement_path %>

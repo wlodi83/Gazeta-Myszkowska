@@ -1,0 +1,74 @@
+9
+
+dir
+11
+file:///C:/svn/Gazeta/gazeta/test
+file:///C:/svn
+
+
+
+2008-09-19T13:59:47.516316Z
+3
+JarekMazanek
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c6cb4d52-0f9b-634d-b65e-8089630285da
+
+unit
+dir
+
+test_helper.rb
+file
+
+
+
+
+2008-09-26T14:10:32.000000Z
+30478106e9df8977e79fc045df799e29
+2008-09-19T11:26:46.875000Z
+1
+JarekMazanek
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1797
+
+functional
+dir
+
+integration
+dir
+
+fixtures
+dir
+

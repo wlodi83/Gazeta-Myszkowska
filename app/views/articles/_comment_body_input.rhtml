@@ -1,0 +1,12 @@
+<div class="comment_form">
+<% form_for(:comment, :html => {:id => 'comment_form'}, :url => comments_path(:user_id => @logged_in_user.id,
+:article_id => @article)) do |f| -%>
+<%= f.error_messages %>
+<p><label for="comment_article">Komentujesz artykuł: </label><div class="title"><%= @article.title %></div></p><br />
+<div class="synopsis"><%= truncate(@article.body.gsub(/<\/?[^>]*>/, ""), 250) %></div><br /><hr style="margin-left:10px;margin-right:10px;margin-bottom:20px;"/>
+<p><label for="body">Treść: </label><%= f.text_area :body %></p><br />
+<%= submit_tag 'Wyślij' -%> lub <%= link_to_remote 'Anuluj',
+                                         :url => {:controller => 'comments', :action => 'remove_comment_body'} %>
+<hr style="margin-left:10px;margin-right:10px;margin-bottom: 20px;margin-top:5px;"/>
+<% end -%>
+</div>

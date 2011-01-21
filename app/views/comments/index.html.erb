@@ -1,0 +1,13 @@
+<p style="text-align:center;margin: 10px;">Komentarze oczekujące na autoryzację:</p>
+<table id="table_of_comments">
+  <tr>
+    <td id="t_title">Tytuł Artykułu</td>
+    <td id="t_body">Treść Komentarza</td>
+  </tr>
+<% for comment in @comments %>
+<tr>
+    <td id="title"><%= link_to "#{comment.article.title}", article_url(comment.article) %>
+    <td id="body"><%=h truncate(comment.body,25) %>...&nbsp;<%= link_to '&#155;&#155;', comment %></td>
+    </tr>
+<% end %>
+</table>

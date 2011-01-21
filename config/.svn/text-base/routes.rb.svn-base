@@ -1,0 +1,39 @@
+ActionController::Routing::Routes.draw do |map|
+
+  map.resources :newspapers
+  map.localization 'localization', :controller => 'newspapers',
+                 :action => 'show',
+                 :id => '1'
+  
+  map.resources :forums do |forum|
+    forum.resources :topics do |topic|
+      topic.resources :posts
+    end
+  end
+
+  
+  map.index '/', :controller => 'pages',
+                 :action => 'show',
+                 :id => '1-welcome-page'
+               
+  map.about 'about', :controller => 'pages',
+                 :action => 'show',
+                 :id => '2-about-gazeta-myszkowska'
+  
+  map.resources :articles, :collection => { :admin => :get }
+  map.resources :categories, :collection => { :admin => :get } do |categories|
+    categories.resources :articles, :name_prefix => 'category_'
+  end
+  
+  map.resources :pages
+  map.resources :users, :member => {:enable => :put} do |users|
+      users.resources :roles, :name_prefix => 'user_'
+  end
+  
+  map.show_user '/user/:username',
+                :controller => 'users',
+                :action => 'show_by_username'
+  
+  map.connect ':controller/:action/:id'
+  map.connect ':controller/:action/:id.:format'
+end

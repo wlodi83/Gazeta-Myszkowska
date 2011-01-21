@@ -1,0 +1,11 @@
+<h2>Kategorie</h2>
+<ul>
+<% @categories.each do |category| %>
+  <li>
+    <%= link_to category.name, category_articles_url(:category_id => category) %>
+    <br />
+     <%= category.children(true).map {|child| link_to child.name }.join(", ") %>
+      
+</li>
+<% end %>
+</ul>

@@ -1,0 +1,3 @@
+<div id="non-authorization"><%= link_to_remote 'Usuń autoryzację',
+                   :url => {:controller => 'comments', :action => 'non_authorization'}, 
+                   :with => "'comment_id='+'#{@comment.id}'" %> |</div>  

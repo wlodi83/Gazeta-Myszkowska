@@ -1,0 +1,18 @@
+<% @articles.each do |article| %>
+  <br />
+  <div id="search_result">
+  <div id="search_links">
+  <%= link_to "#{article.title}", article_url(article) %>
+  </div>
+  <div id="search_body">
+  <%= truncate(article.body.gsub(/<\/?[^>]*>/, ""), 200) %>
+  </div>
+  <div id="search_date">
+    <%= article.published_at.strftime("Opublikowano: %d-%m-%Y") %> | <%= link_to 'Lista artykułów', articles_url  %>
+  </div>
+  </div>
+<% end %>
+<div id="search_pagination">
+<%= will_paginate @search, :previous_label => 'Poprzednia',
+                           :next_label => 'Następna' %>
+</div>

@@ -1,0 +1,7 @@
+<%= link_to main.title, article_url(main.id) %>
+<div id="image_main">
+<% if a = main.attachments[0] %>
+<%= link_to image_tag(a.public_filename(:main), :border => '0'), article_url(main.id) %>
+<% end -%>
+</div>
+<div id="bottom_background"><div id="text"><%= main.synopsis %></div></div>

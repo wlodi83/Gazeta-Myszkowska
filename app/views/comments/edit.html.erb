@@ -1,0 +1,17 @@
+<div class="comment_edit">
+<% form_for(@comment) do |f| %>
+  <p>
+     <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit "Zapisz" %>
+  </p>
+<% end %>
+<br />
+<div id="article_title">Komentarz artykułu: <%= link_to "#{@comment.article.title}", article_url(@comment.article) %></div>
+<div id="username"><i><%= link_to "#{@comment.user.username}", user_path(@comment.user) %></i></div>
+<div id="actions">
+<%= link_to 'Pokaż', @comment %> |
+<%= link_to 'Powrót', comments_path %>
+</div>
+</div>

@@ -1,0 +1,40 @@
+<h2>Edycja Artykułów</h2>
+<br />
+<p><%= link_to 'Nowy Artykuł', new_article_path %></p>
+<br />
+<% if @articles_pages.page_count > 1 %>
+  <p class="pagination">Strony:<strong>
+     <%= pagination_links @articles_pages, :params => params %>
+ </strong></p>
+<% end %>
+<br />
+<table summary="Tabela Artykułów Gazety Myszkowskiej" class="artT" cellspacing="0">
+  <tr>
+    <td colspan="4" class="helpT">Tabela Artytułów Gazety Myszkowskiej</td>
+  </tr>
+  <tr>
+    <td class="helpT">Tytuł</td>
+    <td class="helpT">Opublikowany?</td>
+    <td class="helpT">Edycja</td>
+    <td class="helpT">Usuwanie</td>
+  </tr>  
+<tr><% @articles.each do |article| %>
+    <% if article.published == true %>
+  
+        <td class="helpBtitle"><%= link_to article.title, article_url(article) %></td>
+        <td class="helpB">TAK</td>
+        <td class="helpB">[<%= link_to 'Edytuj', edit_article_path(article) %>]</td>
+        <td class="helpB">[<%= link_to 'Usuń', article_path(article), :method => :delete, 
+          :confirm => 'Napewno usunąć artykuł?' %>]</td>
+</tr>
+  <% elsif !article.user_id.nil?  %>
+<tr>
+       <td class="helpBtitle"><%= link_to article.title, article_url(article) %></td>
+       <td class="helpBnie">NIE</td>
+       <td class="helpB">[<%= link_to 'Edytuj', edit_article_path(article) %>]</td>
+       <td class="helpB">[<%= link_to 'Usuń', article_path(article), :method => :delete, 
+         :confirm => 'Napewno usunąć artykuł?' %>]</td>
+</tr>
+  <% end %>
+<% end %>
+</table>

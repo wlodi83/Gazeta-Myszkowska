@@ -1,0 +1,7 @@
+<p><%= text_field 'newspaper', 'latitude',
+:id => "latitude" %></p>
+<p><%= text_field 'newspaper', 'longitude',
+:id => "longitude" %></p>
+<p><%= text_field 'newspaper', 'zoom',
+:id => "zoom" %></p>
+<%= @map.div(:width => 600, :height => 400) %>

@@ -1,0 +1,5 @@
+<% if a = right_image_link.attachments[0] %>
+<div class="right_image">
+<%= link_to image_tag(a.public_filename(:window), :border => '0'), article_url(right_image_link.id) %>
+</div>
+<% end %>

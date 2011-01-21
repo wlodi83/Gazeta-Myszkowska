@@ -1,0 +1,57 @@
+<% if @article.category %>
+  <p class="category">
+     <% if @article.category.parent_id == nil %>
+     <%= link_to @article.category.root.name, category_articles_path(@article.category.root) %>
+    <% else %>
+     <%= link_to @article.category.root.name, category_articles_path(@article.category.root) %>:&nbsp;<%= link_to @article.category.name, category_articles_path(@article.category) %>
+    <% end %>
+   </p>
+<% end %>
+<div class="article_show">
+<h2><img src="/images/news_panel.jpg" alt="news_panel" style="margin: 0px 10px 0px 0px; float:left;" /><%= @article.title %></h2>
+ <div class="article_body"><%= @article.body %></div>
+</div>
+<% if @article.attachments.size != 0  %>
+<div class="mini_gallery">
+  <p style="margin: 0px 0px 10px 11px; 
+  font-size: 18px;
+  color: #ccffcc;
+  text-decoration: underline;
+  font-style: oblique;
+  font-family: Georgia,'Times New Roman',times,serif;">Galeria zdjęć artykułu</p>
+<% @article.attachments.each do |attachment_article| %>
+  <div class="picture"><%= lightbox_image_tag(attachment_article.public_filename(:thumb), attachment_article.public_filename, {:class=>"images"} )%></div>
+<% end -%>
+</div>
+<% end -%>
+<div id="comments_menu">
+  <% if @article.comments_count.to_i == 0 %>
+    Brak komentarzy | <%= link_to_remote 'Dodaj swoją opinię &#155;&#155;',
+                                         :url => {:controller => 'comments', :action => 'show_comment_body'}, 
+                                         :with => "'article_id='+'#{@article.id}'" %> |
+  <%= link_to 'Powrót do listy artykułów', articles_url  %>                                       
+  <% else %>
+    Liczba komentarzy: <strong><%= @article.comments_count %></strong> | <%= link_to_remote 'Dodaj swoją opinię &#155;&#155;',
+                                         :url => {:controller => 'comments', :action => 'show_comment_body'},
+                                         :with => "'article_id='+'#{@article.id}'" %> | 
+  <%= link_to 'Powrót do listy artykułów', articles_url  %>                                       
+  <% end %>
+</div>
+<div id="comment_body"></div>
+<% @article.comments.each do |comment| -%>
+  <% if comment.published == true %>
+<div class="comments_list">
+  <br />
+  <div id="comment">
+    <div id="username"><br />
+    <%= link_to "#{comment.user.username}", user_path(comment.user) %>&nbsp;
+    </div>
+    <br /><div id="date">(<%= comment.created_at.to_s(:short) %>)</div>
+    <br />
+    <div id="body"><%=h comment.body %></div><br />
+  </div>
+<br />
+</div>
+<% end %>
+  <% end -%>
+
